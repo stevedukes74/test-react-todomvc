@@ -1,5 +1,10 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Todo App
+This app allows you to add a list of todos and manage them. You can add, cross off, and delete your todos.
+
+Below you'll find some useful tidbits.
+
 ## Available Scripts
 
 In the project directory, you can run:
