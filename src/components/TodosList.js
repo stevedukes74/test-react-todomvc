@@ -18,17 +18,17 @@ class TodosList extends Component {
     const numTodos = this.props.todos.length;
     return (
       <Fragment>
-        <p>{`${numTodos} todo item${numTodos !== 1 ? 's' : ''}`}</p>
-        <ul>
+        <p>{`${numTodos} todo item${numTodos !== 1 ? 's' : ''}`} hello</p>
+        <div>
           {this.props.todos.map(todo => (
-            <li key={todo.id.toString()}>
-              <span className={todo.completed ? 'done' : ''}>{todo.text}</span>
-              {!todo.completed && <button onClick={() => this.handleToggle(todo.id)}><Done /></button>}
-              {todo.completed && <button onClick={() => this.handleToggle(todo.id)}><Undo /></button>}
+            <div key={todo.id.toString()} style={{display: 'flex', width: '400px', margin: 'auto', alignItems: 'center'}}>
+              <div className={`todos ${todo.completed ? 'done' : ''}`}>{todo.text}</div>
+              <div>{!todo.completed && <button onClick={() => this.handleToggle(todo.id)}><Done /></button>}<div></div>
+              <div></div>{todo.completed && <button onClick={() => this.handleToggle(todo.id)}><Undo /></button>}</div>
               <button onClick={() => this.handleDelete(todo.id)}><Delete /></button>
-            </li>
+            </div>
           ))}
-        </ul>
+        </div>
       </Fragment>
     )
   }
