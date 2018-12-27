@@ -3,7 +3,11 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { ADD_TODO } from '../utils/constants';
 
-
+/**
+ * Create Todo app
+ * This component dispatches an ADD_TODO action to the redux store
+ * It features a form for user input and processes that input before adding
+ */
 class CreateTodo extends Component {
   constructor(props) {
     super();
@@ -33,6 +37,7 @@ class CreateTodo extends Component {
         id: this.state.id + 1
       });
     } else {
+      // Clear the input field because user sent no text or just spaces
       this.setState({
         text: ''
       });
