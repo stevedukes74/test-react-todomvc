@@ -2,8 +2,12 @@ import React, { Component } from 'react';
 import CreateTodos from './components/CreateTodos';
 import TodosList from './containers/TodosList';
 import logo from './logo.svg';
-import './App.css';
+import './styles/App.css';
 
+/**
+ * Main Todos App
+ * This handles the display/view of the todo app
+ */
 class App extends Component {
   render() {
     return (

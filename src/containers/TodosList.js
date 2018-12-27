@@ -3,7 +3,13 @@ import { connect } from 'react-redux';
 import { compose } from 'ramda';
 import { REMOVE_TODO, TOGGLE_TODO } from '../utils/constants';
 import Todos from '../components/Todos';
-import '../App.css';
+import '../styles/App.css';
+
+/**
+ * TodosList is a container for all todos
+ * @param handleDelete dispatches the delete action to redux
+ * @param handleToggle dispatches the toggle action to redux
+ */
 
 class TodosList extends Component {
   handleDelete = id => {
