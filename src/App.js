@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import CreateTodos from './components/CreateTodos';
-import TodosList from './components/TodosList';
+import TodosList from './containers/TodosList';
 import logo from './logo.svg';
 import './App.css';
 

@@ -38,3 +38,14 @@
 .done {
   text-decoration: line-through;
 }
+
+.todo-row {
+  display: flex !important;
+  justify-content: space-evenly;
+  width: 400px;
+  margin: auto;
+  align-items: center;
+  border: 1px solid #ddd;
+  padding: 2px;
+  margin-bottom: 10px;
+}
